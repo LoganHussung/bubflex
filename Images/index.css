@@ -1,0 +1,273 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-size: 16px;
+  min-height: 100%;
+}
+.whole {
+  padding: 0 40px;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navlist {
+  color: #4D4D4D;
+  display: flex;
+  justify-content: space-between;
+}
+.navlist a {
+  text-decoration: none;
+}
+.navlist li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+}
+.navlist li :hover {
+  border-bottom: 4px solid #A6CAFE;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+}
+.navitem {
+  color: #4D4D4D;
+  padding: 0 5px;
+}
+.social a {
+  color: #4D4D4D;
+  text-decoration: none;
+}
+
+.welovedesign {
+  justify-content: center;
+}
+.welovedesign img {
+  width: 100%;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.singleproduct {
+  border-bottom: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  border-top: 5px solid #8995A1;
+  height: 200px;
+  text-align: center;
+  width: 100%;
+}
+.singleproduct:nth-child(2n+2) {
+  border-top: 5px solid #3DAFC7;
+  height: 200px;
+  text-align: center;
+  width: 100%;
+}
+h2 {
+  color: #4D4D4D;
+  font-size: 1.3rem;
+  width: 100%;
+}
+.description {
+  color: grey;
+  font-size: 15px;
+  line-height: 18px;
+  width: 100%;
+}
+
+
+.hobbies ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.hobbies li {
+  text-align: center;
+  width: 50%;
+}
+.hobbies img {
+  width: 100%;
+}
+
+.projects {
+  padding: 0 47px;
+  width: 100%;
+}
+
+.projectheader {
+  display: block;
+  margin: 20px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.projectheader h1 {
+  color: #333;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  margin: 0;
+  padding: 0;
+}
+.projectheader p {
+  color: #999;
+}
+.siteimages {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.site {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+.site img {
+  height: 300px;
+  width: 100%;
+}
+.siteinfo {
+  opacity: 0;
+  position: absolute;
+  width: 45%;
+}
+.siteinfo:hover {
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  width: 45%;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.site p {
+  color: white;
+  margin-top: 20px;
+  min-height: 34px;
+  padding: 0 100px;
+  text-align: center;
+  width: 50%;
+}
+.siteinfo h5 {
+  background: black;
+  color: white;
+  display: inline-block;
+  margin: 0 45%;
+  padding: 0 20px;
+  text-align: center;
+}
+.moreprojects {
+  text-align: center;
+}
+.moreprojects p {
+  background-color: #3DAFC7;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+}
+.moreprojects p:hover {
+  background-color: #3498B1;
+  border-radius: 5px;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+}
+
+.aboutme {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutmetitle p {
+  text-align: center;
+  width: 100%;
+}
+.pictureofme {
+  width: 100%;
+}
+.pictureofme img {
+  width: 100%;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+}
+.contactform input {
+  background: #EEE;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+
+
+@media (min-width: 451px) {
+  .navlist {
+    justify-content: center;
+  }
+  .email {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .singleproduct {
+    width: 49%;
+  }
+  .singleproduct:nth-child(2n+2) {
+    width: 49%;
+  }
+  .hobbies li {
+    text-align: center;
+  }
+}
+.contactform {
+  align-items: center;
+}
+
+@media (min-width: 786px) {
+  .siteimages {
+    width: 49%;
+  }
+}
+@media (min-width: 1025px) {
+  .singleproduct {
+    width: 24%;
+  }
+  .singleproduct:nth-child(2n+2) {
+    width: 24%;
+  }
+  .aboutme {
+    flex-wrap: nowrap;
+  }
+  .aboutmetitle {
+    width: 50%;
+  }
+
+  .pictureofme {
+    border: 1px solid green;
+    width: 50%;
+  }
+  .aboutmetitle p {
+    font-size: 2rem;
+  }
+}
